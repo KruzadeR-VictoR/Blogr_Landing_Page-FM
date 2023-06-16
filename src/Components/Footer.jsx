@@ -17,13 +17,18 @@ function Footer() {
       bg={"charcoalBlack"}
       py={"5rem"}
       rounded={"0 6rem 0 0"}
-      gap={["3rem",'12rem']}
+      gap={["3rem", "12rem"]}
       // justify={'center'}
-      pl={[0,'8em']}
+      pl={[0, "8em"]}
     >
       <Image src={logo} alt="logo" transform={"scale(.9)"} />
       {/* Products  */}
-      <Flex direction={"column"} gap={5} textAlign={["center",'start']} mt={["5", 0]}>
+      <Flex
+        direction={"column"}
+        gap={5}
+        textAlign={["center", "start"]}
+        mt={["5", 0]}
+      >
         <Heading fontSize={"1rem"} fontWeight={"t_bold"} color={"White"}>
           Product
         </Heading>
@@ -60,9 +65,9 @@ function Footer() {
         </UnorderedList>
       </Flex>
       {/* Company  */}
-      <Flex direction={"column"} gap={5} textAlign={["center",'start']}>
+      <Flex direction={"column"} gap={5} textAlign={["center", "start"]}>
         <Heading fontSize={"1rem"} fontWeight={"t_bold"} color={"White"}>
-          Product
+          Company
         </Heading>
         <UnorderedList
           listStyleType={"none"}
@@ -92,9 +97,9 @@ function Footer() {
         </UnorderedList>
       </Flex>
       {/* Connect  */}
-      <Flex direction={"column"} gap={5} textAlign={["center",'start']}>
+      <Flex direction={"column"} gap={5} textAlign={["center", "start"]}>
         <Heading fontSize={"1rem"} fontWeight={"t_bold"} color={"White"}>
-          Product
+          Connect
         </Heading>
         <UnorderedList
           listStyleType={"none"}
