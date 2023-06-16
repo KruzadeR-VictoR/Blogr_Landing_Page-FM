@@ -45,19 +45,24 @@ function HeroSection() {
     // document.body.style.marginLeft = "56 !important";
   };
 
+  const hoverStyle = {
+    textDecoration: "none",
+    fontWeight: "Bold",
+  };
+
   return (
     <>
       <Flex
         direction={"column"}
         w={"full"}
-        h={"35rem"}        
+        h={"35rem"}
         bgImage={[
           `linear(to-br,hsla(13, 100%, 72%,.95),hsla(353, 100%, 62%,.9)),url(${imgMobile})`,
           `linear(to-br,hsla(13, 100%, 72%,.95),hsla(353, 100%, 62%,.9)),url(${imgDesktop})`,
         ]}
         bgSize={["400%", "250%"]}
         bgRepeat="no-repeat"
-        bgPos={["center,-25rem -20rem",'center,-20rem']}
+        bgPos={["center,-25rem -20rem", "center,-20rem"]}
         rounded={"0 0 0 10rem"}
         pos={"relative"}
       >
@@ -96,33 +101,52 @@ function HeroSection() {
                   <MenuButton
                     as={Button}
                     rightIcon={<DownArrow color="#FFF" />}
-                    color={"White"}
+                    color={"whiteAlpha.800"}
                     bg={"transparent"}
                     fontSize={".9rem"}
                     _hover={{
                       bg: "transparent",
+                      color: "White",
                     }}
                     _focus={{
                       bg: "transparent",
+                    }}
+                    _active={{
+                      bg: "none",
+                      color: "White",
                     }}
                   >
                     Product
                   </MenuButton>
                   <MenuList>
                     <MenuItem>
-                      <Link href="#"> Overview</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        Overview
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Pricing</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Pricing
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Marketplace</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Marketplace
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Features</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Features
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Integrations</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Integrations
+                      </Link>
                     </MenuItem>
                   </MenuList>
                 </Menu>
@@ -130,33 +154,53 @@ function HeroSection() {
                   <MenuButton
                     as={Button}
                     rightIcon={<DownArrow color="#FFF" />}
-                    color={"White"}
+                    color={"whiteAlpha.800"}
                     bg={"transparent"}
                     fontSize={".9rem"}
                     _hover={{
                       bg: "transparent",
+                      color: "White",
                     }}
                     _focus={{
                       bg: "transparent",
                     }}
+                    _active={{
+                      bg: "none",
+                      color: "White",
+                    }}
                   >
-                    Product
+                    Company
                   </MenuButton>
                   <MenuList>
                     <MenuItem>
-                      <Link href="#"> Overview</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Overview
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Pricing</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Pricing
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Marketplace</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Marketplace
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Features</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Features
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Integrations</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Integrations
+                      </Link>
                     </MenuItem>
                   </MenuList>
                 </Menu>
@@ -164,40 +208,64 @@ function HeroSection() {
                   <MenuButton
                     as={Button}
                     rightIcon={<DownArrow color="#FFF" />}
-                    color={"White"}
+                    color={"whiteAlpha.800"}
                     bg={"transparent"}
                     fontSize={".9rem"}
                     _hover={{
                       bg: "transparent",
+                      color: "White",
                     }}
                     _focus={{
                       bg: "transparent",
                     }}
+                    _active={{
+                      bg: "none",
+                      color: "White",
+                    }}
                   >
-                    Product
+                    Connect
                   </MenuButton>
                   <MenuList>
                     <MenuItem>
-                      <Link href="#"> Overview</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Overview
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Pricing</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Pricing
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Marketplace</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Marketplace
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Features</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Features
+                      </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link href="#"> Integrations</Link>
+                      <Link href="#" _hover={hoverStyle}>
+                        {" "}
+                        Integrations
+                      </Link>
                     </MenuItem>
                   </MenuList>
                 </Menu>
               </Flex>
               {/* Right side  */}
               <Flex align={"center"} gap={7}>
-                <Link href="#" color={"White"}>
+                <Link
+                  href="#"
+                  color={"whiteAlpha.800"}
+                  _hover={{ color: "White" }}
+                >
                   Login
                 </Link>
                 <Button
@@ -206,6 +274,10 @@ function HeroSection() {
                   p={5}
                   px={7}
                   rounded={"100px"}
+                  _hover={{
+                    color: "White",
+                    bg: "Lightred",
+                  }}
                 >
                   Sign Up
                 </Button>
@@ -231,7 +303,7 @@ function HeroSection() {
             A modern publishing platform
           </Heading>
           <Text
-            color={"White"}
+            color={"whiteAlpha.800"}
             fontSize={["auto", "1.1rem"]}
             textAlign={"center"}
             maxW={["18rem", "50rem"]}
@@ -245,6 +317,10 @@ function HeroSection() {
               rounded={"50px"}
               fontSize={[".9rem", "1rem"]}
               p={["5", 6]}
+              _hover={{
+                color: "White",
+                bg: "Lightred",
+              }}
             >
               Start for Free
             </Button>
@@ -254,6 +330,10 @@ function HeroSection() {
               rounded={"50px"}
               fontSize={[".9rem", "1rem"]}
               p={["5", 6]}
+              _hover={{
+                color: "Verylightred",
+                bg: "White",
+              }}
             >
               Learn More
             </Button>
